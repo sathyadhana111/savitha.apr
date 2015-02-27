@@ -1,8 +1,7 @@
 #! /bin/bash
 
-d=$($(date) % 2)
-
-if [ $d -eq 0 ]
+if [ "$1" == "fish" ]
 then
-   echo "You have to check how much work u have done so far for learning. " | mail -s "Check learning status" savitha.apr@gmail.com
-fi
+   echo "Hmmmmmm fish.Sathya happy!!! "
+else
+  echo "Sathya don't like that. Sathya wants fish."
