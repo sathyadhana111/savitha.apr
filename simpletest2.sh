@@ -1,9 +1,9 @@
 #! /bin/bash
 
-num=`wc -l simpletest1.sh`
+num=(`wc -l simpletest1.sh`)
 echo $num
 
-if [ $num -lt 100 ]
+if [ "$num" -lt 100 ]
 then
   echo "You have to write more script today."
 else
