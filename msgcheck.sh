@@ -4,5 +4,5 @@ if [ -f /var/log/daily.out ]
 then
   echo "daily.out file is exist in /var/log"
 else
-  echo "dailt.out file is not exist."
+  echo "daily.out file is not exist."
 fi
