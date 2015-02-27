@@ -6,4 +6,5 @@ then
 else
  echo "Error in previous execution."
 fi
+echo
 echo "done...."
