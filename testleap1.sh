@@ -1,11 +1,12 @@
 #! /bin/bash
 
-year=(date +%Y)
+year=(`date +%Y`)
 echo $year
 
-if [ (( [$year % 400] -eq 0 )) || (( ([$year % 4] -eq 0) && ([$year % 100] -ne 0) )) ]
+
+if (( ("$year" % 400) == 0 )) || (( ("$year" % 4 == 0) && ("$year" % 100 != 0) ))
 then
-   echo "Its a leap year. Don't forgot to pay the extra charge."
+   echo "Its a leap year."
 else
   echo "Its not a leap year."
 fi
